@@ -890,6 +890,27 @@ globalThis.bytebeat = new class {
 	setCounterValue(value) {
 		this.controlTime.value = this.settings.isSeconds ?
 			(value / this.songData.sampleRate).toFixed(2) : value;
+		// Lag detection
+		this.updateCounter++;
+		if (this.updateCounter === 400) {
+			this.updateCounter = 0;
+			const time = Date.now();
+			if (this.lastUpdateTime) {
+				const lag =
+					Math.min(Math.max(Math.round((time - this.lastUpdateTime) * 37.5 / 400) - 100, 0), 999);
+				this.controlLag.innerText = lag + '%';
+				if (lag > 3) {
+					if (!this.isLagging) {
+						this.isLagging = true;
+						this.controlLag.classList.add('control-lag-red');
+					}
+				} else if (this.isLagging) {
+					this.isLagging = false;
+					this.controlLag.classList.remove('control-lag-red');
+				}
+			}
+			this.lastUpdateTime = time;
+		}
 	}
 	setDrawMode() {
 		this.settings.drawMode = this.controlDrawMode.value;
