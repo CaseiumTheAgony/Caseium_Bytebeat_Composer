@@ -33,6 +33,7 @@ globalThis.bytebeat = new class {
 		this.canvasWidth = 1024;
 		this.containerFixedElem = null;
 		this.controlDrawMode = null;
+		this.controlLag = null;
 		this.controlPlaybackMode = null;
 		this.controlRecord = null;
 		this.controlSampleDivisor = null;
@@ -50,6 +51,7 @@ globalThis.bytebeat = new class {
 		this.editorElem = null;
 		this.errorElem = null;
 		this.isCompilationError = false;
+		this.isLagging = false;
 		this.isNeedClear = false;
 		this.isPlaying = false;
 		this.isRecording = false;
@@ -606,6 +608,7 @@ globalThis.bytebeat = new class {
 		this.controlCodeSize = document.getElementById('control-codesize');
 		this.controlDrawMode = document.getElementById('control-drawmode');
 		this.controlDrawMode.value = this.settings.drawMode;
+		this.controlLag = document.getElementById('control-lag');
 		this.controlPlaybackMode = document.getElementById('control-mode');
 		this.controlPlayBackward = document.getElementById('control-play-backward');
 		this.controlPlayForward = document.getElementById('control-play-forward');
@@ -805,6 +808,11 @@ globalThis.bytebeat = new class {
 				this.requestAnimationFrame();
 			}
 		} else {
+			this.lastUpdateTime = 0;
+			this.updateCounter = 0;
+			this.isLagging = false;
+			this.controlLag.innerText = '---';
+			this.controlLag.classList.remove('control-lag-red');
 			if (this.isRecording) {
 				this.isRecording = false;
 				this.controlRecord.classList.remove('control-recording');
