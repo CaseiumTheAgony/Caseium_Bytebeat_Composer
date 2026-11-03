@@ -1,6 +1,15 @@
 [
 	{
-		"name": "Nothing here...",
-		"description": "yet..."
+		"name": "Robert inspired beat + Drums",
+		"remix": {
+			"name": "robert inspired beat",
+			"author": "ANoUserXD",
+			"url": "https://dollchan.net/btb/res/2628.html#4578"
+		},
+		"Date": "October 26, 2026",
+		"sampleRate": 16384,
+		"c": true,
+		"description": "this wasn't actually made on October 2026, I probably made this in like August or September, but I cant exactly remember. - Caseium",
+		"codeOriginal": "((t%45|t>>9)&(t%57|t>>6)&(t%38|t>>11)&63)<<2|(int)(3E5/(t&8191)&64)+(t&8192?((t>>2)*(t>>2)*(t>>2)/8&128)%256*(1-t%16383/32767):1)+(t&8192?(t*t*t/256&36)%256*(1-t%8191/8191):1)"
 	}
 ]
