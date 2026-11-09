@@ -309,31 +309,35 @@ globalThis.bytebeat = new class {
 					author == "Trillwin (YouLikeHaveMaterials87, FoodlesMickey)" ?
 					    authorsList
 					    + ` <img style="vertical-align:-2px" title="Trillwin's PFP" src="./Assets/TrillwinPFP.jpg" width="16" height="16"></img>`
-						+ ' <small style="color:#FFF">My Friend!</small>' :
+						+ ' <small style="color:#FFF">KOIII’s friend</small>' :
 					author == "Ey Pacha!" ?
 						authorsList
-						+ ' <small style="color:#0FF">Touchbit Creator</small>' :
+						+ ' <small style="color:#0FF">Touchbit creator</small>' :
 					author == "Madgarden" ?
 						authorsList
-						+ ' <small style="color:#F00">Glitchmachine Creator</small>' :
+						+ ' <small style="color:#F00">Glitchmachine creator</small>' :
 					author == "KOIII7337" ?
 						authorsList
-						+ ' <small style="color:#0F9">Site Owner</small>' :
+						+ ' <small style="color:#0F9">Site owner</small>' :
 					author == "BSquareII" ?
 						authorsList
-						+ ' <small style="color:#AAA">Original Site Creator</small>' :
+						+ ' <small style="color:#AAA">Original site creator</small>' :
 					author == "Chasyxx" ?
 						authorsList
 						+ ' <small style="color:#0F0">Creator of EnBeat_NEW</small>' :
 					author == "pck404" ?
 						authorsList
-						+ ' <small style="color:#61F">BytebeatCloud Creator</small>' :
+						+ ' <small style="color:#61F">BytebeatCloud creator</small>' :
 					author == "mqlarpp" ?
 						authorsList
-						+ ' <small style="color:#F70">mqdantee’s Larp Clone</small>' :
+						+ ' <small style="color:#F70">mqdantee’s larp clone</small>' :
 					author == "viznut" ?
 						authorsList
-						+ ' <small style="color:#5F5">The Man Who Popularized Bytebeat Back In September 2011.</small>' :
+						+ ' <small style="color:#5F5">The man who popularized bytebeat back in September 2011.</small>' :
+						authorsList
+					author == "Caseium" ?
+						authorsList
+						+ ' <small style="color:#93B">Site forker</small>' :
 						authorsList
 				}
 					</summary>`;
