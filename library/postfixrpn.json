@@ -971,6 +971,7 @@
                 "mode": "postfix",
                 "sampleRate": 8192,
                 "codeOriginal": "t 96 & -1 >> | 13 *"
+            },
             {
                 "name": "Wistless",
                 "description": "\"I was originally gonna use this for RiseByte Day 2, but i decided to scrap it. It just didnt really sound that good imo.\" - Caseium"
