@@ -334,7 +334,6 @@ globalThis.bytebeat = new class {
 					author == "viznut" ?
 						authorsList
 						+ ' <small style="color:#5F5">The man who popularized bytebeat back in September 2011.</small>' :
-						authorsList
 					author == "Caseium" ?
 						authorsList
 						+ ' <small style="color:#FF0">Site forker</small>' :
