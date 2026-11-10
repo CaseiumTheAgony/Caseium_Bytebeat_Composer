@@ -963,7 +963,7 @@
     },
     {
         "author": "Caseium",
-        "children":[
+        "children": [
             {
                 "name": "Some kind of weird square wave?",
                 "url": "https://www.touchbit.xyz/#s=8192&bb=5d000001001500000000000000003a08032389d725840dbb53b949ef0b2b3f9c87a38af8f7e5ffffbd170000",
@@ -992,7 +992,7 @@
                 "date": "Nov 6, 2026",
                 "mode": "postfix",
                 "sampleRate": 7596,
-                "codeOriginal":[
+                "codeOriginal": [
                     "t t",
                     "t 14 >> 4 % 5 +",
                     "t 19 >> 7 & 1 + *",
