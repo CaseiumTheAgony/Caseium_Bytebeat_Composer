@@ -8707,20 +8707,75 @@
     },
     {
         "author": "ØMEGA 777",
-        "remix": {
-            "author": "D3nschøt",
-            "name": "idk a keyboard",
-            "url": "https://www.reddit.com/r/bytebeat/comments/1hhija9/idk_a_keyboard/"
-        },
-        "name": "Keyboard",
-        "url": "https://dollchan.net/btb/res/7164.html#10359",
-        "date": "Nov 3, 2025",
-        "sampleRate": 48000,
-        "stereo": true,
-        "big": true,
-        "mode": "Floatbeat",
-        "file": "omega.js",
-        "fileOriginal": true
+		"children": [
+			{
+                "name": "Keyboard",
+                "remix": {
+                    "author": "D3nschøt",
+                    "name": "idk a keyboard",
+                    "url": "https://www.reddit.com/r/bytebeat/comments/1hhija9/idk_a_keyboard/"
+                },
+                "url": "https://dollchan.net/btb/res/7164.html#10359",
+                "date": "Nov 3, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "big": true,
+                "mode": "Floatbeat",
+                "file": "omega.js",
+                "fileOriginal": true
+			},
+			{
+                "name": "IDK is Sky",
+                "url": "https://dollchan.net/btb/res/10665.html#10918",
+                "date": "Nov 29, 2025",
+                "sampleRate": 48000,
+                "stereo": true,
+                "big": true,
+                "mode": "Floatbeat",
+				"starred": 2,
+                "file": "omega-1.js",
+                "fileOriginal": true
+			},
+			{
+				"name": "CHORDS RANDOM",
+                "url": "https://dollchan.net/btb/res/10665.html#16382",
+                "date": "Jul 27, 2026",
+                "sampleRate": 32000,
+                "stereo": true,
+                "big": true,
+                "mode": "Funcbeat",
+				"starred": 1,
+                "file": "omega-3.js",
+                "fileOriginal": true
+			},
+			{
+                "url": "https://dollchan.net/btb/res/10665.html#17671",
+                "date": "Oct 1, 2026",
+                "sampleRate": 48000,
+                "mode": "Floatbeat",
+				"starred": 1,
+                "codeOriginal": [
+					"Saw=(x,i)=>((x&255)/127.5-1)*tanh(abs(sin(x*PI/256)*i)),",
+                    "melody=[,,,2,7,11,6,,s=[14][t>>13&1],s,7,11,6,,6,,][t>>14&15]+2,",
+                    "bass=[[-1,11][t>>14&1],[2,14][t>>14&1]][t>>18&1],",
+                    "Cut=256*(1-t/2**14%1)**2,",
+                    "(Saw(t*55*2**(bass/12-7),Cut)+Saw(t*55*2**(melody/12-6)||0,Cut))/2"
+				]
+			},
+			{
+				"name": "Drafts",
+                "url": "https://dollchan.net/btb/res/10665.html#18420",
+                "date": "Nov 7, 2026",
+                "sampleRate": 32000,
+                "stereo": true,
+                "big": true,
+				"slow": true,
+                "mode": "Funcbeat",
+				"starred": 2,
+                "file": "omega-4.js",
+                "fileOriginal": true
+			}
+		]
     },
     {
         "author": "!{G&Ycatjuice}? (greenandyellowcatjuice)",
@@ -11962,5 +12017,19 @@
         "date": "Oct 9, 2026",
         "sampleRate": 22050,
         "codeOriginal": "F=n=>.1117*pow(2,n/12),M=[19,99,23,24,23,19,21,99,19,16,19,21,24,99,21,99,17,21,26,23,19,99,14,99,24,99,23,24,26,28,28,99,26,24,23,21,21,99,24,99,26,24,26,99,23,19,14,99],V=x=>x>0&&(I=x/3072|0,J=I-(M[I%48]>98),n=M[J%48],g=x*F(n),(sin(g)+.4*sin(g*2)+.15*sin(g*3))*exp(-(x-J*3072)/2200)),b=t/18432%8|0,R=[0,-3,5,7,0,-3,2,7][b],Q=[4,3,4,4,4,3,3,4][b],u=t%6144,B=t/6144%3|0,m=(V(t)+.35*V(t-4608))*.3+(B==0)*sin(t*F(R-12))*exp(-u/2800)*.5+(B>0)*(sin(t*F(R))+sin(t*F(R+Q))+sin(t*F(R+7)))*exp(-u/1400)*.13+(b>3)*(sin(t*F(R+7))+sin(t*F(R+Q+12)))*.03,tanh(m*1.3)*120+128"
-    }
+    },
+	{
+		"author": "Caseium",
+		"name": "Robert inspired beat + Drums",
+		"remix": {
+			"name": "robert inspired beat",
+			"author": "BSquareII",
+			"url": "https://dollchan.net/btb/res/2628.html#4578"
+		},
+		"date": "Oct 26, 2026",
+		"sampleRate": 16384,
+		"c": true,
+		"description": "\"this wasn't actually made on October 2026, I probably made this in like August or September, but I cant exactly remember.\" - Caseium",
+		"codeOriginal": "((t%45|t>>9)&(t%57|t>>6)&(t%38|t>>11)&63)<<2|(int)(3E5/(t&8191)&64)+(t&8192?((t>>2)*(t>>2)*(t>>2)/8&128)%256*(1-t%16383/32767):1)+(t&8192?(t*t*t/256&36)%256*(1-t%8191/8191):1)"
+	}
 ]
