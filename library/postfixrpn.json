@@ -970,7 +970,7 @@
                 "date": "Oct 29, 2026",
                 "mode": "postfix",
                 "sampleRate": 8192,
-                "codeOriginal": "t 96 & -1 >> | 13 *"
+                "codeOriginal": "t 96 & t -1 >> | 13 *"
             },
             {
                 "name": "Wistless",
