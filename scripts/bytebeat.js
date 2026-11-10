@@ -337,7 +337,7 @@ globalThis.bytebeat = new class {
 						authorsList
 					author == "Caseium" ?
 						authorsList
-						+ ' <small style="color:#93B">Site forker</small>' :
+						+ ' <small style="color:#FF0">Site forker</small>' :
 						authorsList
 				}
 					</summary>`;
