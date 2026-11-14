@@ -974,7 +974,7 @@
             },
             {
                 "name": "Wistless",
-                "description": "I was originally gonna use this for RiseByte Day 2, but i decided to scrap it. It just didnt really sound that good imo.",
+                "description": "\"I was originally gonna use this for RiseByte Day 2, but i decided to scrap it. It just didnt really sound that good imo. If you keep listening to it you'll see what i mean. Also it resets itself every 552.30 seconds 💀\" Caseium",
                 "date": "Nov 6, 2026",
                 "mode": "postfix",
                 "sampleRate": 7596,
@@ -989,6 +989,7 @@
             },
             {
                 "name": "Beta version",
+                "description": "\"at least with this one when speeding it up you can kind of hear the melody(or bass?) better.\" - Caseium",
                 "date": "Nov 6, 2026",
                 "mode": "postfix",
                 "sampleRate": 7596,
