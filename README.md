@@ -10,3 +10,5 @@ https://psubscirbe-bytebeat.neocities.org/
 https://github.com/D3nschot/ThisBeat2.1
 
 https://codeberg.org/amin272/BSquare_BytebeatComposer
+
+https://hpinfinikjulio-source.github.io/newbeat
