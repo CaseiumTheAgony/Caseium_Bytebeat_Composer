@@ -9626,7 +9626,9 @@
 			},
             {
                 "name": "Wavetable-like soft synths using exp/cosine bell bumps that move and wrap around.",
-                "description": "change their width to change its timbre; smaller is brighter, wider is softer.",
+                "description": [ "change their width to change its timbre; smaller is brighter, wider is softer.",
+					"\"You might as well call this a lag tester as well cause my i5-13420H CANT even play this BRO WHAT-\" - Caseium",
+				],
                 "url": "https://dollchan.net/btb/res/3.html#12918",
                 "date": "Feb 24, 2026",
                 "sampleRate": 22050,
