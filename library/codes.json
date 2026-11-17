@@ -11287,7 +11287,7 @@
 				"mode": "Floatbeat",
 				"exotic": true,
 				"codeOriginal": "sinf((t*(br(~t>>12,16)^t)>>14)-1e6/(t%(1<<14))|(t>>6))+(random()-0.5) *(4096-t%4096)/2048",
-				"codeMinified": "sinf((t*(br(~t>>12,16)^t)>>14)-1e6/t%(1<<14)|(t>>6))+random()-0.5*(4096-t%4096)/2048"
+				"codeMinified": "sinf((t*(br(~t>>12,16)^t)>>14)-1e6/(t%(1<<14))|t>>6)+(random()-0.5)*(4096-t%4096)/2048"
 			}
     ]
 	},
